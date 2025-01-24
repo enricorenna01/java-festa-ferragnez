@@ -12,13 +12,24 @@ public class CheckGuest {
         String userName = input.nextLine();
         input.close();
 
-        for(int i = 0; i < guestList.length; i++ ) {
+        //for(int i = 0; i < guestList.length; i++ ) {
+          //  if (userName.equals(guestList[i])) {
+            //    System.out.println("Sei nella lista, puoi entrare!");
+              //  break;
+          //  } else {
+            //    System.out.println("Non sei nella lista, non puoi entrare!");
+          //  }
+        //}
+        
+        int i = 0;
+        while (i < guestList.length) {
             if (userName.equals(guestList[i])) {
                 System.out.println("Sei nella lista, puoi entrare!");
                 break;
             } else {
                 System.out.println("Non sei nella lista, non puoi entrare!");
             }
+            i++;
         }
     }
 }
